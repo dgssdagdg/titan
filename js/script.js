@@ -20,6 +20,15 @@ window.addEventListener('click', function(event) {
     if (event.target.closest('.footer__catalog-title')) {
         footerList.classList.toggle('footer__list-open')
     }
+    if (event.target.closest('.header-navigation-box-cart')) {
+        let cart = document.querySelector('.header-cart__list');
+        let catalogBtn = document.querySelector('.header__catalog-btn');
+        let catalog = document.querySelector('.header__catalog ');
+
+        catalogBtn.classList.remove('header__catalog-btn--active');
+        cart.classList.toggle('header-cart-open');
+        catalog.classList.remove('header__catalog--active');
+    }
 })
 
 const popularSubSlider = new Swiper('.popular-slider-tabs', {

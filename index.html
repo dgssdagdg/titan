@@ -393,7 +393,7 @@
 						</div>
 					</div>
 					<div class="header-catalog-navigation">
-						<div class="header-navigation-box header-sity">
+						<div class="header-navigation-box js-modal header-sity " data-modal="select-city">
 							<span class="header-navigation-img">
 								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M12.1272 1.03077L1.47577 4.30814C0.894812 4.48689 0.828803 5.28292 1.37247 5.55475L5.8868 7.81189C6.01719 7.87708 6.12291 7.98276 6.1881 8.11315L8.44518 12.6275C8.71701 13.1711 9.51295 13.1053 9.6917 12.5243L12.9692 1.87288C13.1283 1.35592 12.6442 0.871705 12.1272 1.03077Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -401,7 +401,7 @@
 							</span>
 							<span class="header-navigation-name">Санкт-Петербург</span>
 						</div>
-						<div class="header-navigation-box">
+						<div class="header-navigation-box js-modal" data-modal="auth">
 							<span class="header-navigation-img">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M15 19C15 16.2386 12.7614 14 10 14C7.23858 14 5 16.2386 5 19M10 11C8.34315 11 7 9.65686 7 8C7 6.34315 8.34315 5 10 5C11.6569 5 13 6.34315 13 8C13 9.65686 11.6569 11 10 11ZM19 4.19995V15.8C19 16.9201 19.0002 17.4802 18.7822 17.908C18.5905 18.2844 18.2841 18.5902 17.9078 18.782C17.48 19 16.9203 19 15.8002 19H4.2002C3.08009 19 2.51962 19 2.0918 18.782C1.71547 18.5902 1.40973 18.2844 1.21799 17.908C1 17.4802 1 16.9201 1 15.8V4.19995C1 3.07985 1 2.51986 1.21799 2.09204C1.40973 1.71572 1.71547 1.40973 2.0918 1.21799C2.51962 1 3.08009 1 4.2002 1H15.8002C16.9203 1 17.48 1 17.9078 1.21799C18.2841 1.40973 18.5905 1.71572 18.7822 2.09204C19.0002 2.51986 19 3.07985 19 4.19995Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -430,7 +430,7 @@
 							<span class="header-navigation-name">Избранное</span>
 							<div class="header-navigation-total">15</div>
 						</div>
-						<div class="header-navigation-box">
+						<div class="header-navigation-box js-modal" data-modal="cart">
 							<span class="header-navigation-img">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M1 1H1.26835C1.74213 1 1.97922 1 2.17246 1.08548C2.34283 1.16084 2.48871 1.2823 2.59375 1.43616C2.71289 1.61066 2.75578 1.84366 2.8418 2.30957L5.00004 14L15.4195 14C15.8739 14 16.1016 14 16.2896 13.9198C16.4554 13.8491 16.5989 13.7348 16.7051 13.5891C16.8255 13.424 16.8763 13.2025 16.9785 12.7597L18.5477 5.95972C18.7022 5.29025 18.7796 4.95561 18.6946 4.69263C18.6201 4.46207 18.4639 4.26634 18.256 4.14192C18.0189 4 17.6758 4 16.9887 4H3.5M16 19C15.4477 19 15 18.5523 15 18C15 17.4477 15.4477 17 16 17C16.5523 17 17 17.4477 17 18C17 18.5523 16.5523 19 16 19ZM6 19C5.44772 19 5 18.5523 5 18C5 17.4477 5.44772 17 6 17C6.55228 17 7 17.4477 7 18C7 18.5523 6.55228 19 6 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -491,7 +491,7 @@
 							<div class="header-catalog-form-title">Возникли вопросы?</div>
 							<div class="header-catalog-form-text">Наши специалисты с удовольствием готовы Вам на них ответить.</div>
 						</div>
-						<button type="button" class="btn">Написать</button>
+						<button type="button" class="btn js-modal" data-modal="modal">Написать</button>
 					</div>
 				</div>
 			</div>
@@ -2050,6 +2050,90 @@
 					на сайте - собственность интернет-магазина titan-lock.shop<br>Все права защищены.</p>
 			</div>
 		</footer>
+		<div class="modal" id="cart" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<div class="header-cart__list">
+				<ul class="header-cart__items">
+					<li class="header-cart__item">
+						<a href="#" class="header-cart__image">
+							<img src="images/dist/cart/1.png" alt="cart">
+						</a>
+						<div class="header-cart__info">
+							<div class="header-cart__flex">
+								<p class="header-cart__price">5 600 ₽</p>
+								<span class="header-cart__count">х 3 шт</span>
+							</div>
+							<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+								хвостовиком
+								(нерж.)
+								200CSS (C200SS) DIXON</a>
+						</div>
+						<button class="header-cart__delete">
+							<svg>
+								<use xlink:href="images/dist/sprite.svg#delete"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="header-cart__item">
+						<a href="#" class="header-cart__image">
+							<img src="images/dist/cart/2.png" alt="cart">
+						</a>
+						<div class="header-cart__info">
+							<div class="header-cart__flex">
+								<p class="header-cart__price">19 000 ₽</p>
+							</div>
+							<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+								хвостовиком
+								(нерж.)
+								200CSS (C200SS) DIXON</a>
+						</div>
+						<button class="header-cart__delete">
+							<svg>
+								<use xlink:href="images/dist/sprite.svg#delete"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="header-cart__item">
+						<a href="#" class="header-cart__image">
+							<img src="images/dist/cart/3.png" alt="cart">
+						</a>
+						<div class="header-cart__info">
+							<div class="header-cart__flex">
+								<p class="header-cart__price">1 600 ₽</p>
+								<span class="header-cart__count">х 3 шт</span>
+							</div>
+							<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+								хвостовиком
+								(нерж.)
+								200CSS (C200SS) DIXON</a>
+						</div>
+						<button class="header-cart__delete">
+							<svg>
+								<use xlink:href="images/dist/sprite.svg#delete"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+				<div class="header-cart__wrap">
+					<div class="header-cart__total">
+						<p>Итого</p>
+						<p class="header-cart__total-sum">520 000 ₽</p>
+					</div>
+					<div class="header-cart__attention">
+						<i class="header-cart__attention-icon"></i>
+						<p class="header-cart__attention-text">Минимальная сумма заказа</p>
+						<p class="header-cart__attention-sum">1 000 000 ₽</p>
+						<p class="header-cart__attention-desc">Пожалуйста, добавьте еще товаров в корзину
+						</p>
+					</div>
+					<a href="#" class="btn">В корзину</a>
+				</div>
+			</div>
+		</div>
 		<div class="modal" id="modal" style="display: none;">
 			<button class="modal__close">
 				<svg>
