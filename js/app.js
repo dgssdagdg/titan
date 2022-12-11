@@ -1,5 +1,5 @@
 
-import $ from 'jquery'
+import $ from 'jquery';
 window.jQuery = $
 window.$ = $
 import '~/app/libs/jquery.maskedinput.min.js';
@@ -115,18 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		industrySlider.slideTo(id);
 	});
 
-	const promoSlider = new Swiper('.promo__slider', {
-		slidesPerView: 1,
-		navigation: {
-			nextEl: '.promo__nav-btn--next',
-			prevEl: '.promo__nav-btn--prev',
-		},
-		pagination: {
-			el: '.promo__dots',
-			type: 'bullets',
-			clickable: true,
-		},
-	});
+
 
 	const popularSlider = new Swiper('.popular__slider', {
 		slidesPerView: 'auto',

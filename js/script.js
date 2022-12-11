@@ -1,3 +1,5 @@
+
+
 window.addEventListener('click', function(event) {
 	if (event.target.closest('.header__btn-search')) {
 		let search = document.querySelector('.search');
@@ -14,6 +16,10 @@ window.addEventListener('click', function(event) {
 
         headerRucav.classList.toggle('header__catalog-nav-active')
     }
+    let footerList = document.querySelector('.footer__catalog');
+    if (event.target.closest('.footer__catalog-title')) {
+        footerList.classList.toggle('footer__list-open')
+    }
 })
 
 const popularSubSlider = new Swiper('.popular-slider-tabs', {
@@ -23,4 +29,39 @@ const popularSubSlider = new Swiper('.popular-slider-tabs', {
         nextEl: '.popular__nav-sub-btn--next',
         prevEl: '.popular__nav-sub-btn--prev',
     },
+});
+const promoSlider = new Swiper('.promo__slider', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.promo__nav-btn--next',
+        prevEl: '.promo__nav-btn--prev',
+    },
+    autoplay: {
+        delay: 9000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+});
+
+const catalogSubSlider = new Swiper('.catalog-slider', {
+    spaceBetween: 6,
+    slidesPerView: 1,
+    pagination: {
+        el: '.catalog-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+});
+const goodsSubSlider = new Swiper('.goods-slider', {
+    spaceBetween: 13,
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: '.goods-pagination',
+        type: 'bullets',
+        clickable: true
+      },
 });
