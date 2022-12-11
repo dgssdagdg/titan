@@ -38,6 +38,7 @@ const promoSlider = new Swiper('.promo__slider', {
     },
     autoplay: {
         delay: 9000,
+        disableOnInteraction: false,  
     },
     pagination: {
         el: '.swiper-pagination',
