@@ -4070,8 +4070,15 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .modal-cities__select {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .modal.header-cart__item {
     row-gap: 20px;
+  }
+  .modal-cities .btn {
+    margin: 0 !important;
   }
   .captcha img {
     max-width: 100%;
