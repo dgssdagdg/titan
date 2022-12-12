@@ -1,5 +1,4 @@
 
-
 window.addEventListener('click', function(event) {
 	if (event.target.closest('.header__btn-search')) {
 		let search = document.querySelector('.search');
@@ -46,7 +45,7 @@ const promoSlider = new Swiper('.promo__slider', {
         prevEl: '.promo__nav-btn--prev',
     },
     autoplay: {
-        delay: 9000,
+        delay: 15000,
         disableOnInteraction: false,  
     },
     pagination: {

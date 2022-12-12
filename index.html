@@ -260,7 +260,7 @@
 						</ul>
 					</nav>
 					<ul class="header__catalog-nav">
-						<div class="header__catalog-nav-close header-catalog-none">Назад</div>
+						<li class="header__catalog-nav-close header-catalog-none">Назад</li>
 						<li class="header__catalog-nav__item">
 							<a href="#catalog1" class="header__catalog-nav__link header__catalog-nav__link--active">
 								<div class="header__catalog-nav__icon">
@@ -530,7 +530,11 @@
 								<p class="promo__desc">Оригинальная продукция по доступной цене</p>
 								<a href="#" class="btn btn--yellow">Подробнее</a>
 							</div>
-							<video class="promo-fon-img" autoplay="true" loop="true" muted="true" src="images/src/promo/221122_Titan.mov" ></video>
+							<video class="promo-fon-img" autoplay loop muted>
+								<source src="images/src/promo/221122_Titan.mov" type='video/mov; codecs="theora, vorbis"'>
+								<source src="images/src/promo/221122_Titan.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="images/src/promo/221122_Titan.webm" type='video/webm; codecs="vp8, vorbis"'>
+							</video>
 						</div>
 						<div class="swiper-slide promo__slide">
 							<div class="promo__content">
