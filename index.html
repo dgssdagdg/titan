@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>TitanLock</title>
+	<meta name="description" content="Описание">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<a href="#" class="header__city js-modal" data-modal="select-city">Санкт-Петербург</a>
+					<div class="header__top-right">
+						<div class="header__email">
+							<a href="mailto:sale+387344@titan-lock.shop"
+								class="header__email-text">sale+387344@titan-lock.shop</a>
+							<a href="#" class="header__top-link js-modal" data-modal="modal">Оставить запрос</a>
+						</div>
+						<div class="header__phone">
+							<a href="tel:88003500828" class="header__phone-text">8 (800) 350-08-28</a>
+							<a href="#" class="header__top-link js-modal" data-modal="call">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__main">
+				<div class="container">
+					<button class="header__catalog-btn header__catalog-btn-mob">
+						<i class="header__catalog-btn__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</i>
+					</button>
+					<a href="#" class="logo">
+						<img src="images/dist/logo.png" alt="TITANLOCK" class="logo__image">
+					</a>
+					<button class="header__catalog-btn">
+						<i class="header__catalog-btn__icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</i>
+						Каталог
+					</button>
+					<div class="header__search">
+						<form class="search">
+							<input type="text" name="search" placeholder="Искать товары">
+							<button class="btn">Найти</button>
+							<ul class="search__list">
+								<li class="search__item">
+									<a href="#" class="search__item-link">Рукава для пара</a>
+									<button class="search__item-delete">
+										<svg>
+											<use xlink:href="images/dist/sprite.svg#close"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="search__item">
+									<a href="#" class="search__item-link">Многофункциональные рукава</a>
+									<button class="search__item-delete">
+										<svg>
+											<use xlink:href="images/dist/sprite.svg#close"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="search__item">
+									<a href="#" class="search__item-link search__item-link--active">Абразивостойкие
+										рукава</a>
+									<button class="search__item-delete">
+										<svg>
+											<use xlink:href="images/dist/sprite.svg#close"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="search__item">
+									<a href="#" class="search__item-link">Рукава для битума</a>
+									<button class="search__item-delete">
+										<svg>
+											<use xlink:href="images/dist/sprite.svg#close"></use>
+										</svg>
+									</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="header__buttons">
+						<a href="#" class="header__btn header__btn-search">
+							<span class="header__btn-icon">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z" fill="black"/>
+								</svg>
+							</span>
+						</a>
+						<a href="#" class="header__btn">
+							<span class="header__btn-icon">
+								<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2.22222 2.14286L12.2794 9L21.7777 2.14286M23 4.65709V13.3428C23 14.6229 23.0003 15.2631 22.7338 15.752C22.4995 16.1821 22.125 16.5317 21.6651 16.7508C21.1422 17 20.4581 17 19.0891 17H4.91135C3.54233 17 2.85731 17 2.33442 16.7508C1.87447 16.5317 1.50079 16.1821 1.26643 15.752C1 15.2631 1 14.6229 1 13.3428V4.65709C1 3.37697 1 2.73699 1.26643 2.24805C1.50079 1.81796 1.87447 1.46827 2.33442 1.24913C2.85731 1 3.54233 1 4.91135 1H19.0891C20.4581 1 21.1422 1 21.6651 1.24913C22.125 1.46827 22.4995 1.81796 22.7338 2.24805C23.0003 2.73699 23 3.37697 23 4.65709Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</span>
+						</a>
+						<a href="tel:88003500828" class="header__btn">
+							<span class="header__btn-icon">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.50295 2.25722C7.19922 1.4979 6.46381 1 5.646 1H2.89474C1.8483 1 1 1.84834 1 2.89478C1 11.7895 8.21078 19 17.1055 19C18.1519 19 19 18.1518 19 17.1054L18.9999 14.3541C18.9999 13.5362 18.5019 12.8009 17.7426 12.4972L15.1071 11.4429C14.4251 11.1701 13.6485 11.293 13.0842 11.7633L12.4031 12.3307C11.6084 12.993 10.44 12.94 9.70854 12.2086L7.79136 10.2915C7.05993 9.56009 7.00722 8.39155 7.66943 7.5969L8.23682 6.91599C8.7071 6.35164 8.83002 5.57494 8.55719 4.89287L7.50295 2.25722Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+							</span>
+						</a>
+						<a href="#" class="header__btn header__btn--login js-modal" data-modal="auth">
+							<span class="header__btn-icon">
+								<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15 19C15 16.2386 12.7614 14 10 14C7.23858 14 5 16.2386 5 19M10 11C8.34315 11 7 9.65686 7 8C7 6.34315 8.34315 5 10 5C11.6569 5 13 6.34315 13 8C13 9.65686 11.6569 11 10 11ZM19 4.19995V15.8C19 16.9201 19.0002 17.4802 18.7822 17.908C18.5905 18.2844 18.2841 18.5902 17.9078 18.782C17.48 19 16.9203 19 15.8002 19H4.2002C3.08009 19 2.51962 19 2.0918 18.782C1.71547 18.5902 1.40973 18.2844 1.21799 17.908C1 17.4802 1 16.9201 1 15.8V4.19995C1 3.07985 1 2.51986 1.21799 2.09204C1.40973 1.71572 1.71547 1.40973 2.0918 1.21799C2.51962 1 3.08009 1 4.2002 1H15.8002C16.9203 1 17.48 1 17.9078 1.21799C18.2841 1.40973 18.5905 1.71572 18.7822 2.09204C19.0002 2.51986 19 3.07985 19 4.19995Z"
+										stroke="currentColor" stroke-width="2" />
+								</svg>
+							</span>
+							<span class="header__btn-text">Войти</span>
+						</a>
+						<a href="#" class="header__btn header__btn--compare">
+							<span class="header__btn-value">2</span>
+							<span class="header__btn-icon">
+								<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class="header__btn-text">Сравнение</span>
+						</a>
+						<a href="#" class="header__btn header__btn--favorite">
+							<span class="header__btn-value">5</span>
+							<span class="header__btn-icon">
+								<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class="header__btn-text">Избранное</span>
+						</a>
+						<div class="header__btn header__btn--cart header-cart">
+							<a href="#" class="header-cart__link">
+								<span class="header__btn-value">2</span>
+								<span class="header__btn-icon">
+									<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1 1H1.26835C1.74213 1 1.97922 1 2.17246 1.08548C2.34283 1.16084 2.48871 1.2823 2.59375 1.43616C2.71289 1.61066 2.75578 1.84366 2.8418 2.30957L5.00004 14L15.4195 14C15.8739 14 16.1016 14 16.2896 13.9198C16.4554 13.8491 16.5989 13.7348 16.7051 13.5891C16.8255 13.424 16.8763 13.2025 16.9785 12.7597L18.5477 5.95972C18.7022 5.29025 18.7796 4.95561 18.6946 4.69263C18.6201 4.46207 18.4639 4.26634 18.256 4.14192C18.0189 4 17.6758 4 16.9887 4H3.5M16 19C15.4477 19 15 18.5523 15 18C15 17.4477 15.4477 17 16 17C16.5523 17 17 17.4477 17 18C17 18.5523 16.5523 19 16 19ZM6 19C5.44772 19 5 18.5523 5 18C5 17.4477 5.44772 17 6 17C6.55228 17 7 17.4477 7 18C7 18.5523 6.55228 19 6 19Z"
+											stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+								<span class="header__btn-text">Корзина</span>
+							</a>
+							<div class="header-cart__list">
+								<ul class="header-cart__items">
+									<li class="header-cart__item">
+										<a href="#" class="header-cart__image">
+											<img src="images/dist/cart/1.png" alt="cart">
+										</a>
+										<div class="header-cart__info">
+											<div class="header-cart__flex">
+												<p class="header-cart__price">5 600 ₽</p>
+												<span class="header-cart__count">х 3 шт</span>
+											</div>
+											<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+												хвостовиком
+												(нерж.)
+												200CSS (C200SS) DIXON</a>
+										</div>
+										<button class="header-cart__delete">
+											<svg>
+												<use xlink:href="images/dist/sprite.svg#delete"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="header-cart__item">
+										<a href="#" class="header-cart__image">
+											<img src="images/dist/cart/2.png" alt="cart">
+										</a>
+										<div class="header-cart__info">
+											<div class="header-cart__flex">
+												<p class="header-cart__price">19 000 ₽</p>
+											</div>
+											<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+												хвостовиком
+												(нерж.)
+												200CSS (C200SS) DIXON</a>
+										</div>
+										<button class="header-cart__delete">
+											<svg>
+												<use xlink:href="images/dist/sprite.svg#delete"></use>
+											</svg>
+										</button>
+									</li>
+									<li class="header-cart__item">
+										<a href="#" class="header-cart__image">
+											<img src="images/dist/cart/3.png" alt="cart">
+										</a>
+										<div class="header-cart__info">
+											<div class="header-cart__flex">
+												<p class="header-cart__price">1 600 ₽</p>
+												<span class="header-cart__count">х 3 шт</span>
+											</div>
+											<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+												хвостовиком
+												(нерж.)
+												200CSS (C200SS) DIXON</a>
+										</div>
+										<button class="header-cart__delete">
+											<svg>
+												<use xlink:href="images/dist/sprite.svg#delete"></use>
+											</svg>
+										</button>
+									</li>
+								</ul>
+								<div class="header-cart__wrap">
+									<div class="header-cart__total">
+										<p>Итого</p>
+										<p class="header-cart__total-sum">520 000 ₽</p>
+									</div>
+									<div class="header-cart__attention">
+										<i class="header-cart__attention-icon"></i>
+										<p class="header-cart__attention-text">Минимальная сумма заказа</p>
+										<p class="header-cart__attention-sum">1 000 000 ₽</p>
+										<p class="header-cart__attention-desc">Пожалуйста, добавьте еще товаров в корзину
+										</p>
+									</div>
+									<a href="#" class="btn">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__catalog">
+				<div class="container">
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item"><a href="#" class="header__nav-link header-catalog-none header__nav-link-catalog">Каталог</a></li>
+							<li class="header__nav-item header__nav-dropdown">
+								<a href="#" class="header__nav-link">Компания</a>
+								<ul class="nav__dropdown">
+									<li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">О компании</a>
+									</li>
+									<li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Партнерам</a></li>
+									<li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Каталоги</a></li>
+								</ul>
+							</li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Партнерам</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Оплата и доставка</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Гарантия и возврат</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Гарантия и возврат</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Подбор по параметрам</a></li>
+						</ul>
+					</nav>
+					<ul class="header__catalog-nav">
+						<li class="header__catalog-nav-close header-catalog-none">Назад</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog1" class="header__catalog-nav__link header__catalog-nav__link--active">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/1.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Камлоки</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item header__catalog-item-open">
+							<a href="#catalog2" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/2.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Промышленные рукава</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog3" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/3.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Быстроразъемные соединения (БРС)</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog4" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/4.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Арматура для топливной промышленности</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog5" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/5.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Хомуты</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog6" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/6.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Арматура для пищевой промышленности</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog7" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/7.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Запорная арматура</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog8" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/8.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Соединения Bauer (Agri-lock)</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog9" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/9.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Соединения Storz</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog10" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/10.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Фитинги</span>
+							</a>
+						</li>
+						<li class="header__catalog-nav__item">
+							<a href="#catalog11" class="header__catalog-nav__link">
+								<div class="header__catalog-nav__icon">
+									<img src="images/dist/catalog/11.png" alt="icon">
+								</div>
+								<span class="header__catalog-nav__text">Гидравлические компоненты</span>
+							</a>
+						</li>
+					</ul>
+					<div class="header__catalog-content">
+						<div class="header__catalog-nav-close header__catalog-item-open">Назад</div>
+						<div class="header__catalog-content__head">
+							<h3 class="header__catalog-title">Промышленные рукава</h3>
+							<span class="header__catalog-count">2 653 товаров</span>
+						</div>
+						<div class="header__catalog-box">
+							<ul class="header__catalog-list">
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Маслобензостойкие
+										рукава</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Химостойкие
+										рукава</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Пищевые рукава</a>
+								</li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Рукава для
+										пара</a></li>
+								<li class="header__catalog-item"><a href="#"
+										class="header__catalog-link">Многофункциональные рукава</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Абразивостойкие
+										рукава</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Рукава для
+										битума</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">ПВХ рукава</a>
+								</li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Гибкие воздуховоды
+										и полиуретановые шланги</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Рукава для
+										бетононасосов</a></li>
+							</ul>
+							<ul class="header__catalog-list">
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Композитные рукава
+									</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Термозащитные
+										рукава
+									</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Рукава для газовой
+										сварки</a></li>
+								<li class="header__catalog-item"><a href="#" class="header__catalog-link">Рукава для воды и
+										воздуха</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-catalog-navigation">
+						<div class="header-navigation-box js-modal header-sity " data-modal="select-city">
+							<span class="header-navigation-img">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.1272 1.03077L1.47577 4.30814C0.894812 4.48689 0.828803 5.28292 1.37247 5.55475L5.8868 7.81189C6.01719 7.87708 6.12291 7.98276 6.1881 8.11315L8.44518 12.6275C8.71701 13.1711 9.51295 13.1053 9.6917 12.5243L12.9692 1.87288C13.1283 1.35592 12.6442 0.871705 12.1272 1.03077Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+							</span>
+							<span class="header-navigation-name">Санкт-Петербург</span>
+						</div>
+						<div class="header-navigation-box js-modal" data-modal="auth">
+							<span class="header-navigation-img">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 19C15 16.2386 12.7614 14 10 14C7.23858 14 5 16.2386 5 19M10 11C8.34315 11 7 9.65686 7 8C7 6.34315 8.34315 5 10 5C11.6569 5 13 6.34315 13 8C13 9.65686 11.6569 11 10 11ZM19 4.19995V15.8C19 16.9201 19.0002 17.4802 18.7822 17.908C18.5905 18.2844 18.2841 18.5902 17.9078 18.782C17.48 19 16.9203 19 15.8002 19H4.2002C3.08009 19 2.51962 19 2.0918 18.782C1.71547 18.5902 1.40973 18.2844 1.21799 17.908C1 17.4802 1 16.9201 1 15.8V4.19995C1 3.07985 1 2.51986 1.21799 2.09204C1.40973 1.71572 1.71547 1.40973 2.0918 1.21799C2.51962 1 3.08009 1 4.2002 1H15.8002C16.9203 1 17.48 1 17.9078 1.21799C18.2841 1.40973 18.5905 1.71572 18.7822 2.09204C19.0002 2.51986 19 3.07985 19 4.19995Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									
+							</span>
+							<span class="header-navigation-name">Войти</span>
+						</div>
+						<div class="header-navigation-box">
+							<span class="header-navigation-img">
+								<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									
+									
+							</span>
+							<span class="header-navigation-name">Сравнение</span>
+							<div class="header-navigation-total">15</div>
+						</div>
+						<div class="header-navigation-box">
+							<span class="header-navigation-img">
+								<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</span>
+							<span class="header-navigation-name">Избранное</span>
+							<div class="header-navigation-total">15</div>
+						</div>
+						<div class="header-navigation-box js-modal" data-modal="cart">
+							<span class="header-navigation-img">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1H1.26835C1.74213 1 1.97922 1 2.17246 1.08548C2.34283 1.16084 2.48871 1.2823 2.59375 1.43616C2.71289 1.61066 2.75578 1.84366 2.8418 2.30957L5.00004 14L15.4195 14C15.8739 14 16.1016 14 16.2896 13.9198C16.4554 13.8491 16.5989 13.7348 16.7051 13.5891C16.8255 13.424 16.8763 13.2025 16.9785 12.7597L18.5477 5.95972C18.7022 5.29025 18.7796 4.95561 18.6946 4.69263C18.6201 4.46207 18.4639 4.26634 18.256 4.14192C18.0189 4 17.6758 4 16.9887 4H3.5M16 19C15.4477 19 15 18.5523 15 18C15 17.4477 15.4477 17 16 17C16.5523 17 17 17.4477 17 18C17 18.5523 16.5523 19 16 19ZM6 19C5.44772 19 5 18.5523 5 18C5 17.4477 5.44772 17 6 17C6.55228 17 7 17.4477 7 18C7 18.5523 6.55228 19 6 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									
+							</span>
+							<span class="header-navigation-name">Корзина</span>
+							<div class="header-navigation-total">15</div>
+						</div>
+						<div class="header-navigation-block">
+							<div class="header-navigation-block-item">
+								<div class="header-navigation-box">
+									<span class="header-navigation-img">
+										<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.77778 1.71429L8.17778 6L14.2222 1.71429M15 3.28568V8.71425C15 9.51433 15.0002 9.91443 14.8306 10.22C14.6815 10.4888 14.4432 10.7073 14.1505 10.8443C13.8177 11 13.3825 11 12.5113 11H3.48904C2.61785 11 2.18193 11 1.84918 10.8443C1.55648 10.7073 1.31868 10.4888 1.16955 10.22C1 9.91443 1 9.51433 1 8.71425V3.28568C1 2.4856 1 2.08562 1.16955 1.78003C1.31868 1.51123 1.55648 1.29267 1.84918 1.1557C2.18193 1 2.61785 1 3.48904 1H12.5113C13.3825 1 13.8177 1 14.1505 1.1557C14.4432 1.29267 14.6815 1.51123 14.8306 1.78003C15.0002 2.08562 15 2.4856 15 3.28568Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+									</span>
+									<span class="header-navigation-name">sale+387344@titan-lock.shop</span>
+								</div>
+								<button type="button" class="header-navigation-block-btn js-modal" data-modal="modal">Оставить запрос</button>
+							</div>
+							<div class="header-navigation-block-item">
+								<div class="header-navigation-box">
+									<span class="header-navigation-img">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.3353 1.83815C5.13282 1.33193 4.64254 1 4.09733 1H2.26316C1.56554 1 1 1.56556 1 2.26318C1 8.19298 5.80719 13 11.737 13C12.4346 13 13 12.4345 13 11.7369L12.9999 9.90268C12.9999 9.35748 12.6679 8.86724 12.1617 8.66476L10.4048 7.96192C9.95004 7.78003 9.43235 7.86201 9.05613 8.17554L8.60205 8.55382C8.07228 8.99529 7.29332 8.95999 6.8057 8.47236L5.52758 7.19434C5.03995 6.70671 5.00482 5.92769 5.44629 5.39792L5.82454 4.94398C6.13807 4.56775 6.22001 4.04995 6.03813 3.59524L5.3353 1.83815Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+									</span>
+									<span class="header-navigation-name">8 (800) 350-08-28</span>
+								</div>
+								<button type="button" class="header-navigation-block-btn js-modal" data-modal="call">Заказать звонок
+								</button>
+							</div>
+						</div>
+					</div>
+					<form class="form">
+						<h4 class="form__title">Возникли вопросы?</h4>
+						<p class="form__desc">Наши специалисты с&nbsp;удовольствием готовы<br>Вам на&nbsp;них ответить.</p>
+						<div class="form__box">
+							<input type="text" class="input" name="name" placeholder="Имя">
+							<input type="tel" class="input" name="phone" placeholder="Номер телефона">
+							<input type="email" class="input" name="email" placeholder="E-mail">
+							<textarea name="comment" placeholder="Ваш комментарий"></textarea>
+						</div>
+						<div class="form__bottom">
+							<button class="btn">Отправить</button>
+							<label class="agree">
+								<input type="checkbox" name="checkbox" checked required>
+								<span class="agree__box">
+									<span class="agree__icon"></span>
+									<span class="agree__text">Соглашаюсь на обработку<br><a href="#">персональных
+											данных</a></span>
+								</span>
+							</label>
+						</div>
+					</form>
+					<div class="header-catalog-form">
+						<div class="header-catalog-form-box">
+							<div class="header-catalog-form-title">Возникли вопросы?</div>
+							<div class="header-catalog-form-text">Наши специалисты с удовольствием готовы Вам на них ответить.</div>
+						</div>
+						<button type="button" class="btn js-modal" data-modal="modal">Написать</button>
+					</div>
+				</div>
+			</div>
+			<div class="header__navigation">
+				<div class="container">
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item header__nav-dropdown">
+								<a href="#" class="header__nav-link">Компания</a>
+								<ul class="nav__dropdown">
+									<li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">О компании</a>
+									</li>
+									<li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Партнерам</a></li>
+									<li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Каталоги</a></li>
+								</ul>
+							</li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Партнерам</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Оплата и доставка</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Гарантия и возврат</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Гарантия и возврат</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+							<li class="header__nav-item"><a href="#" class="header__nav-link">Подбор по параметрам</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="promo">
+				<div class="swiper promo__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide promo__slide">
+							<div class="promo__content">
+								<h2 class="promo__title">Стандартные камолки и&nbsp;камолки-преходники</h2>
+								<p class="promo__desc">Оригинальная продукция по доступной цене</p>
+								<a href="#" class="btn btn--yellow">Подробнее</a>
+							</div>
+							<video class="promo-fon-img" autoplay loop muted>
+								<source src="images/src/promo/221122_Titan.mov" type='video/mov; codecs="theora, vorbis"'>
+								<source src="images/src/promo/221122_Titan.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="images/src/promo/221122_Titan.webm" type='video/webm; codecs="vp8, vorbis"'>
+							</video>
+						</div>
+						<div class="swiper-slide promo__slide">
+							<div class="promo__content">
+								<h2 class="promo__title">Стандартные камолки и&nbsp;камолки-преходники</h2>
+								<p class="promo__desc">Оригинальная продукция по доступной цене</p>
+								<a href="#" class="btn btn--yellow">Подробнее</a>
+							</div>
+							<img src="images/src/promo/1.jpg" alt="" class="promo-fon-img">
+						</div>
+						<div class="swiper-slide promo__slide">
+							<div class="promo__content">
+								<h2 class="promo__title">Стандартные камолки и&nbsp;камолки-преходники</h2>
+								<p class="promo__desc">Оригинальная продукция по доступной цене</p>
+								<a href="#" class="btn btn--yellow">Подробнее</a>
+							</div>
+							<img src="images/src/promo/1.jpg" alt="" class="promo-fon-img">
+						</div>
+						<div class="swiper-slide promo__slide">
+							<div class="promo__content">
+								<h2 class="promo__title">Стандартные камолки и&nbsp;камолки-преходники</h2>
+								<p class="promo__desc">Оригинальная продукция по доступной цене</p>
+								<a href="#" class="btn btn--yellow">Подробнее</a>
+							</div>
+							<img src="images/src/promo/1.jpg" alt="" class="promo-fon-img">
+						</div>
+						
+					</div>
+				</div>
+				<div class="promo__nav">
+					<button class="promo__nav-btn promo__nav-btn--prev slider__btn slider__btn--prev">
+						<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+								fill="currentColor" />
+						</svg>
+					</button>
+					<button class="promo__nav-btn promo__nav-btn--next slider__btn slider__btn--next">
+						<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+								fill="currentColor" />
+						</svg>
+					</button>
+				</div>
+				<div class="promo__controls">
+					<!-- <button class="promo__play"><i></i></button> -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="catalog">
+				<div class="container">
+					<h2 class="subtitle">Каталог</h2>
+
+					<div class="catalog__list">
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/1.png" alt="Камлоки">
+							</div>
+							<h4 class="catalog__item-name">Камлоки</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/2.png" alt="Промышленные рукава">
+							</div>
+							<h4 class="catalog__item-name">Промышленные рукава</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/3.png" alt="Быстроразъемные соединения (БРС)">
+							</div>
+							<h4 class="catalog__item-name">Быстроразъемные соединения (БРС)</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/4.png" alt="Арматура для топливной промышленности">
+							</div>
+							<h4 class="catalog__item-name">Арматура для топливной промышленности</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/5.png" alt="Хомуты">
+							</div>
+							<h4 class="catalog__item-name">Хомуты</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/6.png" alt="Арматура для пищевой промышленности">
+							</div>
+							<h4 class="catalog__item-name">Арматура<br>для пищевой промышленности</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/7.png" alt="Запорная арматура">
+							</div>
+							<h4 class="catalog__item-name">Запорная<br>арматура</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/8.png" alt="Соединения Bauer (Agri-lock)">
+							</div>
+							<h4 class="catalog__item-name">Соединения Bauer (Agri-lock)</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/9.png" alt="Соединения Storz">
+							</div>
+							<h4 class="catalog__item-name">Соединения<br>Storz</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/10.png" alt="Фитинги">
+							</div>
+							<h4 class="catalog__item-name">Фитинги</h4>
+						</a>
+						<a href="#" class="catalog__item">
+							<div class="catalog__item-image">
+								<img src="images/dist/catalog/11.png" alt="Гидравлические компоненты">
+							</div>
+							<h4 class="catalog__item-name">Гидравлические<br>компоненты</h4>
+						</a>
+						<a href="#" class="catalog__item catalog__item--list">
+							<p class="catalog__item-text">Смотреть всесь каталог продукции</p>
+							<span class="slider__btn slider__btn--next">
+								<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+										fill="currentColor" />
+								</svg>
+							</span>
+						</a>
+					</div>
+					<div class="catalog-slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="catalog__list">
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/1.png" alt="Камлоки">
+										</div>
+										<h4 class="catalog__item-name">Камлоки</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/2.png" alt="Промышленные рукава">
+										</div>
+										<h4 class="catalog__item-name">Промышленные рукава</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/3.png" alt="Быстроразъемные соединения (БРС)">
+										</div>
+										<h4 class="catalog__item-name">Быстроразъемные соединения (БРС)</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/4.png" alt="Арматура для топливной промышленности">
+										</div>
+										<h4 class="catalog__item-name">Арматура для топливной промышленности</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/5.png" alt="Хомуты">
+										</div>
+										<h4 class="catalog__item-name">Хомуты</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/6.png" alt="Арматура для пищевой промышленности">
+										</div>
+										<h4 class="catalog__item-name">Арматура<br>для пищевой промышленности</h4>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="catalog__list">
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/7.png" alt="Запорная арматура">
+										</div>
+										<h4 class="catalog__item-name">Запорная<br>арматура</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/8.png" alt="Соединения Bauer (Agri-lock)">
+										</div>
+										<h4 class="catalog__item-name">Соединения Bauer (Agri-lock)</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/9.png" alt="Соединения Storz">
+										</div>
+										<h4 class="catalog__item-name">Соединения<br>Storz</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/10.png" alt="Фитинги">
+										</div>
+										<h4 class="catalog__item-name">Фитинги</h4>
+									</a>
+									<a href="#" class="catalog__item">
+										<div class="catalog__item-image">
+											<img src="images/dist/catalog/11.png" alt="Гидравлические компоненты">
+										</div>
+										<h4 class="catalog__item-name">Гидравлические<br>компоненты</h4>
+									</a>
+									<a href="#" class="catalog__item catalog__item--list">
+										<p class="catalog__item-text">Смотреть всесь каталог продукции</p>
+										<span class="slider__btn slider__btn--next">
+											<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+													fill="currentColor" />
+											</svg>
+										</span>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="catalog-pagination"></div>
+				</div>
+			</div>
+			<div class="industry">
+				<div class="industry__images">
+					<div class="industry__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide industry__slide"><img src="images/dist/industry/1.jpg" alt="image"></div>
+							<div class="swiper-slide industry__slide"><img src="images/dist/industry/2.jpg" alt="image"></div>
+							<div class="swiper-slide industry__slide"><img src="images/dist/industry/3.jpg" alt="image"></div>
+						</div>
+					</div>
+					<div class="industry__nav">
+						<button class="industry__nav-btn industry__nav-btn--prev slider__btn slider__btn--prev">
+							<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+									fill="currentColor" />
+							</svg>
+						</button>
+						<button class="industry__nav-btn industry__nav-btn--next slider__btn slider__btn--next">
+							<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+									fill="currentColor" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="industry__content">
+					<h2 class="subtitle">Отрасли промышлиности</h2>
+					<p class="industry__text">Камлок состоит из приемной части — розетки (мама) со штуцером для рукава или
+						резьбой, вставной части — ниппеля (папа) со штуцером для рукава или резьбой и уплотнительного кольца.
+						Для подсоединения к оборудованию ниппель и розетка камлока имеют наружную или внутреннюю резьбу, для
+						соединения рукавов — соединение с хвостовиком типа «елочка». При необходимости камлок комплектуется
+						заглушками для защиты от протекания.</p>
+					<div class="industry__tabs">
+						<a href="#industry0" class="industry__tab industry__tab--active" data-industry-tab="0">
+							<img src="images/dist/industry/tabs/1.jpg" alt="tab1">
+						</a>
+						<a href="#industry1" class="industry__tab" data-industry-tab="1">
+							<img src="images/dist/industry/tabs/2.jpg" alt="tab1">
+						</a>
+						<a href="#industry2" class="industry__tab" data-industry-tab="2">
+							<img src="images/dist/industry/tabs/3.jpg" alt="tab1">
+						</a>
+					</div>
+					<div class="industry__items">
+						<div class="industry__item industry__item--active" id="industry0">
+							<h3 class="industry__item-subtitle">Сельскохозяйственная промышленность</h3>
+							<p class="industry__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+								наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа «елочка».
+							</p>
+						</div>
+						<div class="industry__item" id="industry1">
+							<h3 class="industry__item-subtitle">Топливная промышленность</h3>
+							<p class="industry__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+								наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа «елочка».
+							</p>
+						</div>
+						<div class="industry__item" id="industry2">
+							<h3 class="industry__item-subtitle">Пищевая промышленность</h3>
+							<p class="industry__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+								наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа «елочка».
+							</p>
+						</div>
+					</div>
+					<a href="#" class="industry__link">
+						Смотреть все статьи
+						<svg viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M7.25628 0.271972C7.59799 -0.0906574 8.15201 -0.0906574 8.49372 0.271972L13.7437 5.8434C13.9078 6.01754 14 6.25373 14 6.5C14 6.74627 13.9078 6.98246 13.7437 7.1566L8.49372 12.728C8.15201 13.0907 7.59799 13.0907 7.25628 12.728C6.91457 12.3654 6.91457 11.7775 7.25628 11.4148L11.0126 7.42857L0.875 7.42857C0.391751 7.42857 0 7.01284 0 6.5C0 5.98717 0.391751 5.57143 0.875 5.57143L11.0126 5.57143L7.25628 1.58517C6.91457 1.22254 6.91457 0.634602 7.25628 0.271972Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="products">
+				<div class="container">
+					<div class="products__tabs">
+						<a href="#products1" class="products__tab products__tab--active">Новинки</a>
+						<a href="#products2" class="products__tab">Хиты</a>
+						<a href="#products3" class="products__tab">Рекомендуем</a>
+					</div>
+					<div class="products__wrap">
+						<div class="products__box products__box--active" id="products1">
+							<div class="products__slider swiper">
+								<div class="products__list swiper-wrapper">
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/1.jpg" alt="product">
+										</a>
+										<p class="products__item-price">5 600 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+											<a href="#" class="products__item-tag products__item-tag--black">советуем</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/2.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<div class="products__counter">
+												<button class="products__counter-btn products__counter-btn--minus">
+													<svg>
+														<use xlink:href="images/dist/sprite.svg#minus"></use>
+													</svg>
+												</button>
+												<input type="number" name="counter" value="1" placeholder="1" min="0">
+												<button class="products__counter-btn products__counter-btn--plus">
+													<svg>
+														<use xlink:href="images/dist/sprite.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/3.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/4.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/5.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/1.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__nav">
+								<button class="products__nav-btn products__nav-btn--prev slider__btn slider__btn--prev">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="products__nav-btn products__nav-btn--next slider__btn slider__btn--next">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+							<div class="products__dots"></div>
+						</div>
+						<div class="products__box" id="products2">
+							<div class="products__slider swiper">
+								<div class="products__list swiper-wrapper">
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/1.jpg" alt="product">
+										</a>
+										<p class="products__item-price">5 600 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+											<a href="#" class="products__item-tag products__item-tag--black">советуем</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/2.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<div class="products__counter">
+												<button class="products__counter-btn products__counter-btn--minus">
+													<svg>
+														<use xlink:href="images/dist/sprite.svg#minus"></use>
+													</svg>
+												</button>
+												<input type="number" name="counter" value="1" placeholder="1" min="0">
+												<button class="products__counter-btn products__counter-btn--plus">
+													<svg>
+														<use xlink:href="images/dist/sprite.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/3.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/4.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/5.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/1.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__nav">
+								<button class="products__nav-btn products__nav-btn--prev slider__btn slider__btn--prev">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="products__nav-btn products__nav-btn--next slider__btn slider__btn--next">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+							<div class="products__dots"></div>
+						</div>
+						<div class="products__box" id="products3">
+							<div class="products__slider swiper">
+								<div class="products__list swiper-wrapper">
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/1.jpg" alt="product">
+										</a>
+										<p class="products__item-price">5 600 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+											<a href="#" class="products__item-tag products__item-tag--black">советуем</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/2.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<div class="products__counter">
+												<button class="products__counter-btn products__counter-btn--minus">
+													<svg>
+														<use xlink:href="images/dist/sprite.svg#minus"></use>
+													</svg>
+												</button>
+												<input type="number" name="counter" value="1" placeholder="1" min="0">
+												<button class="products__counter-btn products__counter-btn--plus">
+													<svg>
+														<use xlink:href="images/dist/sprite.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/3.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/4.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/5.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products__item swiper-slide">
+										<div class="products__item-tags">
+											<a href="#" class="products__item-tag products__item-tag--new">новинки</a>
+										</div>
+										<a href="#" class="products__item-image">
+											<img src="images/dist/products/1.jpg" alt="product">
+										</a>
+										<p class="products__item-price">1 900 ₽</p>
+										<a href="#" class="products__item-desc">2in Соединение типа С, розетка с хвостовиком
+											(нерж.)
+											200CSS
+											(C200SS) DIXON</a>
+										<div class="products__item-rating">4.3</div>
+										<div class="products__item-bottom">
+											<button class="btn btn--border">В корзину</button>
+											<button class="products__favorite">
+												<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 4.15428C8 -0.540162 1 -0.0401613 1 5.95987C1 11.9599 10 16.9598 10 16.9598C10 16.9598 19 11.9599 19 5.95987C19 -0.0401613 12 -0.540162 10 4.15428Z"
+														stroke="currentColor" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="products__compare">
+												<svg viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 11H8M13 10L19 10M16 13V7M1 6H12M1 1H12" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__nav">
+								<button class="products__nav-btn products__nav-btn--prev slider__btn slider__btn--prev">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="products__nav-btn products__nav-btn--next slider__btn slider__btn--next">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+							<div class="products__dots"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<div class="container">
+					<h2 class="subtitle">Подбор товаров по отраслям </h2>
+					<div class="goods__list">
+						<a href="#" class="goods__item">
+							<img src="images/dist/goods/1.jpg" alt="goods">
+							<div class="goods__item-box">
+								<h3 class="goods__item-title">Пищевая промышленность</h3>
+								<p class="goods__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+									наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа
+									«елочка». </p>
+							</div>
+						</a>
+						<a href="#" class="goods__item">
+							<img src="images/dist/goods/2.jpg" alt="goods">
+							<div class="goods__item-box">
+								<h3 class="goods__item-title">Сельскохозяйственная промышленность</h3>
+								<p class="goods__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+									наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа
+									«елочка». </p>
+							</div>
+						</a>
+						<a href="#" class="goods__item">
+							<img src="images/dist/goods/3.jpg" alt="goods">
+							<div class="goods__item-box">
+								<h3 class="goods__item-title">Топливная промышленность </h3>
+								<p class="goods__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+									наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа
+									«елочка». </p>
+							</div>
+						</a>
+					</div>
+					<div class="goods-slider swiper">
+						<div class="swiper-wrapper">
+							
+							<div class="swiper-slide">
+								<a href="#" class="goods__item">
+									<img src="images/dist/goods/1.jpg" alt="goods">
+									<div class="goods__item-box">
+										<h3 class="goods__item-title">Пищевая промышленность</h3>
+										<p class="goods__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+											наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа
+											«елочка». </p>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="goods__item">
+									<img src="images/dist/goods/2.jpg" alt="goods">
+									<div class="goods__item-box">
+										<h3 class="goods__item-title">Сельскохозяйственная промышленность</h3>
+										<p class="goods__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+											наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа
+											«елочка». </p>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="goods__item">
+									<img src="images/dist/goods/3.jpg" alt="goods">
+									<div class="goods__item-box">
+										<h3 class="goods__item-title">Топливная промышленность </h3>
+										<p class="goods__item-text">Для подсоединения к оборудованию ниппель и розетка камлока имеют
+											наружную или внутреннюю резьбу, для соединения рукавов — соединение с хвостовиком типа
+											«елочка». </p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="goods-pagination"></div>
+				</div>
+			</div>
+			<div class="about">
+				<div class="container">
+					<div class="about__image">
+						<img src="images/dist/about.jpg" alt="О Компании">
+					</div>
+					<div class="about__content">
+						<h2 class="about__title">TITAN LOCK производитель<br>промышленных комплектующих</h2>
+						<p class="about__text">Под брендом TITAN LOCK выпускается широкий ассортимент высококачественных
+							комплектующих для различных отраслей промышленности. Мы специализируемся на поставках соединительной
+							арматуры, рукавов и различного оборудования для перекачки нефтепродуктов, пищевых производств,
+							фармацевтики и других сфер.</p>
+						<h3 class="about__subtitle">Мы предлагаем следующий ассортимент:</h3>
+						<p class="about__text">Камлоки. Соединения, предназначенные для быстрой стыковки рукавов между собой или для их
+							присоединения к различным видам промышленного оборудования (соответствуют технической документации
+							ТУ 24.20.40-001-83804144-20201).</p>
+						<a href="#" class="about__link">
+							Подробнее
+							<svg viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M7.25628 0.271972C7.59799 -0.0906574 8.15201 -0.0906574 8.49372 0.271972L13.7437 5.8434C13.9078 6.01754 14 6.25373 14 6.5C14 6.74627 13.9078 6.98246 13.7437 7.1566L8.49372 12.728C8.15201 13.0907 7.59799 13.0907 7.25628 12.728C6.91457 12.3654 6.91457 11.7775 7.25628 11.4148L11.0126 7.42857L0.875 7.42857C0.391751 7.42857 0 7.01284 0 6.5C0 5.98717 0.391751 5.57143 0.875 5.57143L11.0126 5.57143L7.25628 1.58517C6.91457 1.22254 6.91457 0.634602 7.25628 0.271972Z"
+									fill="currentColor" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="popular">
+				<div class="container">
+					<h2 class="subtitle">Популярные направления </h2>
+					<div class="popular__list">
+						<div class="popular__tabs">
+							<div class="popular-slider-tabs swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">							<a href="#popular1" class="popular__tab">
+										<div class="popular__tab-icon">
+											<svg>
+												<use xlink:href="images/dist/sprite.svg#icon1"></use>
+											</svg>
+										</div>
+										<span class="popular__tab-name">Камлоки</span>
+									</a></div>
+									<div class="swiper-slide">
+										<a href="#popular2" class="popular__tab popular__tab--active">
+											<div class="popular__tab-icon">
+												<svg>
+													<use xlink:href="images/dist/sprite.svg#icon2"></use>
+												</svg>
+											</div>
+											<span class="popular__tab-name">Промышленные<br>рукава</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#popular3" class="popular__tab">
+											<div class="popular__tab-icon">
+												<svg>
+													<use xlink:href="images/dist/sprite.svg#icon3"></use>
+												</svg>
+											</div>
+											<span class="popular__tab-name">Быстроразъемные<br>соединения (БРС)</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#popular4" class="popular__tab">
+											<div class="popular__tab-icon">
+												<svg>
+													<use xlink:href="images/dist/sprite.svg#icon4"></use>
+												</svg>
+											</div>
+											<span class="popular__tab-name">Хомуты</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#popular5" class="popular__tab">
+											<div class="popular__tab-icon">
+												<svg>
+													<use xlink:href="images/dist/sprite.svg#icon5"></use>
+												</svg>
+											</div>
+											<span class="popular__tab-name">Арматура для пищевой<br>промышленности</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#popular6" class="popular__tab">
+											<div class="popular__tab-icon">
+												<svg>
+													<use xlink:href="images/dist/sprite.svg#icon6"></use>
+												</svg>
+											</div>
+											<span class="popular__tab-name">Арматура для топливной<br>промышленности</span>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#popular7" class="btn btn--border">
+											Все направления
+											<svg viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M7.25628 0.271972C7.59799 -0.0906574 8.15201 -0.0906574 8.49372 0.271972L13.7437 5.8434C13.9078 6.01754 14 6.25373 14 6.5C14 6.74627 13.9078 6.98246 13.7437 7.1566L8.49372 12.728C8.15201 13.0907 7.59799 13.0907 7.25628 12.728C6.91457 12.3654 6.91457 11.7775 7.25628 11.4148L11.0126 7.42857L0.875 7.42857C0.391751 7.42857 0 7.01284 0 6.5C0 5.98717 0.391751 5.57143 0.875 5.57143L11.0126 5.57143L7.25628 1.58517C6.91457 1.22254 6.91457 0.634602 7.25628 0.271972Z"
+													fill="currentColor" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="popular__nav">
+								<button class="popular__nav-btn popular__nav-sub-btn--prev slider__btn slider__btn--prev">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="popular__nav-btn popular__nav-sub-btn--next slider__btn slider__btn--next">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="popular__content">
+						<div class="popular__item" id="popular1">
+							<div class="popular__info">
+								<div class="popular__info-icon">
+									<svg>
+										<use xlink:href="images/dist/sprite.svg#icon2"></use>
+									</svg>
+								</div>
+								<h4 class="popular__info-title">Камлоки</h4>
+							</div>
+							<div class="popular__slider-wrap">
+								<div class="popular__slider swiper">
+									<div class="popular__slider-wrapper swiper-wrapper">
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Маслобензостойкие<br>рукава <span>(75)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/2.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Гибкие воздуховоды и полиуретановые шланги
+													<span>(30)</span>
+												</p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/3.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Многофункциональные рукава <span>(16)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/4.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Маслобензостойкие<br>рукава <span>(75)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Рукава для воды и<br>воздуха <span>(47)</span>
+												</p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Рукава для воды и<br>воздуха <span>(47)</span>
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="popular__nav">
+									<button class="popular__nav-btn popular__nav-btn--prev slider__btn slider__btn--prev">
+										<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+												fill="currentColor" />
+										</svg>
+									</button>
+									<button class="popular__nav-btn popular__nav-btn--next slider__btn slider__btn--next">
+										<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+												fill="currentColor" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="popular__item popular__item--active" id="popular2">
+							<div class="popular__info">
+								<div class="popular__info-icon">
+									<svg>
+										<use xlink:href="images/dist/sprite.svg#icon2"></use>
+									</svg>
+								</div>
+								<h4 class="popular__info-title">Промышленные<br>рукава</h4>
+							</div>
+							<div class="popular__nav">
+								<button class="popular__nav-btn popular__nav-btn--prev slider__btn slider__btn--prev">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="popular__nav-btn popular__nav-btn--next slider__btn slider__btn--next">
+									<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+							<div class="popular__slider-wrap">
+								<div class="popular__slider swiper">
+									<div class="popular__slider-wrapper swiper-wrapper">
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Маслобензостойкие<br>рукава <span>(75)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/2.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Гибкие воздуховоды и полиуретановые шланги
+													<span>(30)</span>
+												</p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/3.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Многофункциональные рукава <span>(16)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/4.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Маслобензостойкие<br>рукава <span>(75)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Рукава для воды и<br>воздуха <span>(47)</span>
+												</p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Рукава для воды и<br>воздуха <span>(47)</span>
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popular__item" id="popular3">
+							<div class="popular__info">
+								<div class="popular__info-icon">
+									<svg>
+										<use xlink:href="images/dist/sprite.svg#icon2"></use>
+									</svg>
+								</div>
+								<h4 class="popular__info-title">Быстроразъемные<br>соединения (БРС)</h4>
+							</div>
+							<div class="popular__slider-wrap">
+								<div class="popular__slider swiper">
+									<div class="popular__slider-wrapper swiper-wrapper">
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Маслобензостойкие<br>рукава <span>(75)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/2.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Гибкие воздуховоды и полиуретановые шланги
+													<span>(30)</span>
+												</p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/3.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Многофункциональные рукава <span>(16)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/4.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Маслобензостойкие<br>рукава <span>(75)</span></p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Рукава для воды и<br>воздуха <span>(47)</span>
+												</p>
+											</a>
+										</div>
+										<div class="popular__slide swiper-slide">
+											<a href="#" class="popular__slide-link">
+												<div class="popular__slide-image">
+													<img src="images/dist/popular/1/1.png" alt="popular">
+												</div>
+												<p class="popular__slide-text">Рукава для воды и<br>воздуха <span>(47)</span>
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="popular__nav">
+									<button class="popular__nav-btn popular__nav-btn--prev slider__btn slider__btn--prev">
+										<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+												fill="currentColor" />
+										</svg>
+									</button>
+									<button class="popular__nav-btn popular__nav-btn--next slider__btn slider__btn--next">
+										<svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.8844 0.397528C11.397 -0.132469 12.228 -0.132469 12.7406 0.397529L20.6156 8.54039C20.8617 8.7949 21 9.1401 21 9.50003C21 9.85997 20.8617 10.2052 20.6156 10.4597L12.7406 18.6025C12.228 19.1325 11.397 19.1325 10.8844 18.6025C10.3719 18.0725 10.3719 17.2132 10.8844 16.6832L16.5188 10.8572L1.3125 10.8572C0.587626 10.8572 0 10.2496 0 9.50003C0 8.7505 0.587626 8.14289 1.3125 8.14289L16.5188 8.14289L10.8844 2.31682C10.3719 1.78682 10.3719 0.927526 10.8844 0.397528Z"
+												fill="currentColor" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-row">
+					<div class="footer__left">
+						<a href="#" class="logo">
+							<img src="images/dist/logo.png" alt="TITANLOCK" class="logo__image">
+						</a>
+						<div class="footer__contacts">
+							<p class="footer__contacts-text footer__contacts-text--city">Москва</p>
+							<a href="tel:88003500828" class="footer__contacts-text footer__contacts-text--phone">8 (800)
+								350-08-28</a>
+							<p class="footer__contacts-text footer__contacts-text--address">г.
+								Санкт-петербург,<br>Митрофаньевское шоссе, д.10</p>
+							<a href="mailto:sale+387344@titan-lock.shop"
+								class="footer__contacts-text footer__contacts-text--email">sale+387344@titan-lock.shop</a>
+						</div>
+						<p class="copyright">© Titan Lock 2022</p>
+						<a href="#" class="dev">Разработка сайта - Крупное Дело</a>
+					</div>
+					<div class="footer__content">
+						<div class="footer__box footer__box--nav">
+							<nav class="footer__catalog">
+								<h3 class="footer__catalog-title">Каталог</h3>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Камлоки</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Промышленные рукава</a>
+									</li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Быстроразъемные
+											соединения
+											(БРС)</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Арматура для топливной
+											промышленности</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Хомуты</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Арматура для пищевой
+											промышленности</a></li>
+								</ul>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Запорная арматура</a>
+									</li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Фитинги</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Гидравлические
+											компоненты</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Соединения Bauer
+											(Agri-lock)</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__list-link">Соединения Storz</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__box footer__box--pay">
+							<div class="footer__pay">
+								<h4 class="footer__pay-title">Принимаем к оплате:</h4>
+								<div class="footer__pay-payments">
+									<a href="#"><img src="images/dist/visa.png" alt=""></a>
+									<a href="#"><img src="images/dist/master-card.png" alt=""></a>
+									<a href="#"><img src="images/dist/mir.png" alt=""></a>
+									<a href="#"><img src="images/dist/paykeeper.png" alt="payment" class="paykeeper"></a>
+									
+								</div>
+							</div>
+						</div>
+						<div class="footer__box footer__box--form">
+							<form class="footer__form">
+								<label for="footer-email">Подпишитесь на полезную рассылку о новинках, акциях и
+									спецпредложениях</label>
+								<div class="footer__form-box">
+									<input type="email" id="footer-email" name="email" placeholder="Введите ваш e-mail"
+										required>
+									<button class="btn">
+										<svg>
+											<use xlink:href="images/dist/sprite.svg#email"></use>
+										</svg>
+									</button>
+								</div>
+							</form>
+							<p class="copyright">© Titan Lock 2022</p>
+							<a href="#" class="dev">Разработка сайта - Крупное Дело</a>
+						</div>
+						<p class="policy">Информация, представленная на сайте titan-lock.shop, не является публичной офертой.
+							Данный интернет-сайт носит исключительно информационный характер и не является публичной офертой,
+							определяемой положениями ч. 2 ст. 437 Гражданского кодекса РФ. Для получения точной информации о
+							стоимости товаров и условиях поставки, пожалуйста, обратитесь к нашим менеджерам.<br>Вся информация
+							на сайте - собственность интернет-магазина titan-lock.shop<br>Все права защищены.</p>
+					</div>
+				</div>
+				<div class="copyright-copyright-box">
+					<p class="copyright">© Titan Lock 2022</p>
+					<a href="#" class="dev">Разработка сайта - Крупное Дело</a>
+				</div>
+				
+				<p class="policy">Информация, представленная на сайте titan-lock.shop, не является публичной офертой.
+					Данный интернет-сайт носит исключительно информационный характер и не является публичной офертой,
+					определяемой положениями ч. 2 ст. 437 Гражданского кодекса РФ. Для получения точной информации о
+					стоимости товаров и условиях поставки, пожалуйста, обратитесь к нашим менеджерам.<br>Вся информация
+					на сайте - собственность интернет-магазина titan-lock.shop<br>Все права защищены.</p>
+			</div>
+		</footer>
+		<div class="modal" id="cart" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<div class="header-cart__list">
+				<ul class="header-cart__items">
+					<li class="header-cart__item">
+						<a href="#" class="header-cart__image">
+							<img src="images/dist/cart/1.png" alt="cart">
+						</a>
+						<div class="header-cart__info">
+							<div class="header-cart__flex">
+								<p class="header-cart__price">5 600 ₽</p>
+								<span class="header-cart__count">х 3 шт</span>
+							</div>
+							<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+								хвостовиком
+								(нерж.)
+								200CSS (C200SS) DIXON</a>
+						</div>
+						<button class="header-cart__delete">
+							<svg>
+								<use xlink:href="images/dist/sprite.svg#delete"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="header-cart__item">
+						<a href="#" class="header-cart__image">
+							<img src="images/dist/cart/2.png" alt="cart">
+						</a>
+						<div class="header-cart__info">
+							<div class="header-cart__flex">
+								<p class="header-cart__price">19 000 ₽</p>
+							</div>
+							<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+								хвостовиком
+								(нерж.)
+								200CSS (C200SS) DIXON</a>
+						</div>
+						<button class="header-cart__delete">
+							<svg>
+								<use xlink:href="images/dist/sprite.svg#delete"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="header-cart__item">
+						<a href="#" class="header-cart__image">
+							<img src="images/dist/cart/3.png" alt="cart">
+						</a>
+						<div class="header-cart__info">
+							<div class="header-cart__flex">
+								<p class="header-cart__price">1 600 ₽</p>
+								<span class="header-cart__count">х 3 шт</span>
+							</div>
+							<a href="#" class="header-cart__text">2in Соединение типа С, розетка с
+								хвостовиком
+								(нерж.)
+								200CSS (C200SS) DIXON</a>
+						</div>
+						<button class="header-cart__delete">
+							<svg>
+								<use xlink:href="images/dist/sprite.svg#delete"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+				<div class="header-cart__wrap">
+					<div class="header-cart__total">
+						<p>Итого</p>
+						<p class="header-cart__total-sum">520 000 ₽</p>
+					</div>
+					<div class="header-cart__attention">
+						<i class="header-cart__attention-icon"></i>
+						<p class="header-cart__attention-text">Минимальная сумма заказа</p>
+						<p class="header-cart__attention-sum">1 000 000 ₽</p>
+						<p class="header-cart__attention-desc">Пожалуйста, добавьте еще товаров в корзину
+						</p>
+					</div>
+					<a href="#" class="btn">В корзину</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="modal" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<h3 class="modal__title">Оставить запрос</h3>
+			<form class="form">
+				<input type="text" class="input" name="name" placeholder="Имя">
+				<input type="text" class="input" name="company" placeholder="Название компании">
+				<input type="tel" class="input" name="phone" placeholder="Номер телефона">
+				<input type="email" class="input" name="email" placeholder="E-mail">
+				<div class="captcha">
+					<img src="images/dist/captcha.jpg" alt="captcha">
+				</div>
+				<label class="agree">
+					<input type="checkbox" name="checkbox" checked required>
+					<span class="agree__box">
+						<span class="agree__icon"></span>
+						<span class="agree__text">Соглашаюсь на обработку <a href="#">персональных
+								данных</a></span>
+					</span>
+				</label>
+				<button class="btn">Отправить</button>
+			</form>
+		</div>
+		<div class="modal" id="call" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<h3 class="modal__title">Заказать звонок</h3>
+			<form class="form">
+				<input type="text" class="input" name="name" placeholder="Имя">
+				<input type="tel" class="input" name="phone" placeholder="Номер телефона">
+				<div class="captcha">
+					<img src="images/dist/captcha.jpg" alt="captcha">
+				</div>
+				<label class="agree">
+					<input type="checkbox" name="checkbox" checked required>
+					<span class="agree__box">
+						<span class="agree__icon"></span>
+						<span class="agree__text">Соглашаюсь на обработку <a href="#">персональных
+								данных</a></span>
+					</span>
+				</label>
+				<button class="btn">Отправить</button>
+			</form>
+		</div>
+		<div class="modal" id="auth" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<h3 class="modal__title">Авторизация</h3>
+			<form class="form">
+				<input type="text" class="input" name="login" placeholder="Логин">
+				<input type="password" class="input" name="password" placeholder="Пароль">
+				<div class="form__auth">
+					<button class="btn">Войти</button>
+					<a href="#" class="reset-password">Забыли пароль?</a>
+				</div>
+				<a href="#" class="register">Регистрация</a>
+			</form>
+			<div class="login-socials">
+				<p class="login-socials__text">Или выполните вход через</p>
+				<div class="login-socials__list">
+					<a href="#" class="login-socials__item">
+						<svg class="gmail-icon">
+							<use xlink:href="images/dist/sprite.svg#gmail"></use>
+						</svg>
+					</a>
+					<a href="#" class="login-socials__item">
+						<svg class="mail-icon">
+							<use xlink:href="images/dist/sprite.svg#mail"></use>
+						</svg>
+					</a>
+					<a href="#" class="login-socials__item">
+						<svg class="yandex-icon">
+							<use xlink:href="images/dist/sprite.svg#yandex"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="register" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<h3 class="modal__title">Регистрация</h3>
+			<form class="form">
+				<input type="text" class="input" name="name" placeholder="Имя">
+				<input type="text" class="input" name="login" placeholder="Логин">
+				<input type="email" class="input" name="email" placeholder="E-mail">
+				<input type="password" class="input" name="password" placeholder="Пароль">
+				<input type="password" class="input" name="password2" placeholder="Подтверждение пароля">
+				<div class="captcha">
+					<img src="images/dist/captcha.jpg" alt="captcha">
+				</div>
+				<label class="agree">
+					<input type="checkbox" name="checkbox" checked required>
+					<span class="agree__box">
+						<span class="agree__icon"></span>
+						<span class="agree__text">Соглашаюсь на обработку <a href="#">персональных
+								данных</a></span>
+					</span>
+				</label>
+				<button class="btn js-modal" data-modal="thanks">Зарегестрироваться</button>
+			</form>
+		</div>
+		<div class="modal modal-city" id="select-city" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<p class="modal-city__text">Ваш город</p>
+			<h4 class="modal-city__name">Санкт-Петербург</h4>
+			<div class="modal-city__buttons">
+				<button class="btn js-btn-close">Все верно</button>
+				<button class="btn btn--border js-btn-change-city">Сменить город</button>
+			</div>
+		</div>
+		<div class="modal modal-cities" id="cities" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<h4 class="modal-cities__title">Выберите город</h4>
+			<form class="search">
+				<input type="text" name="search" placeholder="Найти город">
+				<button class="btn">Найти</button>
+			</form>
+			<div class="modal-cities__tags">
+				<a href="#" class="modal-cities__tag">Москва</a>
+				<a href="#" class="modal-cities__tag">Челябинск</a>
+			</div>
+			<div class="modal-cities__select">
+				<div class="modal-cities__box">
+					<div class="modal-cities__subtitle">Округ</div>
+					<ul class="modal-cities__list">
+						<li class="modal-cities__item"><a class="modal-cities__link" href="#">Центр</a></li>
+						<li class="modal-cities__item"><a class="modal-cities__link modal-cities__link--active"
+								href="#">Урал</a></li>
+					</ul>
+				</div>
+				<div class="modal-cities__box">
+					<div class="modal-cities__subtitle">Регион</div>
+					<ul class="modal-cities__list">
+						<li class="modal-cities__item"><a class="modal-cities__link" href="#">Свердловская область</a></li>
+						<li class="modal-cities__item"><a class="modal-cities__link modal-cities__link--active"
+								href="#">Челябинская облать</a></li>
+					</ul>
+				</div>
+				<div class="modal-cities__box">
+					<div class="modal-cities__subtitle">Город</div>
+					<ul class="modal-cities__list">
+						<li class="modal-cities__item"><a class="modal-cities__link modal-cities__link--active"
+								href="#">Челябинск</a></li>
+						<li class="modal-cities__item"><a class="modal-cities__link" href="#">Магнитогорск</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal-thanks" id="thanks" style="display: none;">
+			<button class="modal__close">
+				<svg>
+					<use xlink:href="images/dist/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<img src="images/dist/icons/thanks.svg" alt="thanks" class="modal-thanks__icon">
+			<h3 class="modal-thanks__title">Спасибо!</h3>
+			<p class="modal-thanks__text">Теперь вы всегда будете в&nbsp;курсе наших акций и&nbsp;спецпредложений</p>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
