@@ -116,6 +116,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 992px) {
+  body.compensate-for-scrollbar {
+    padding-right: 17px !important;
+  }
+}
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -748,6 +753,9 @@ body {
 .header-cart__info {
   padding-right: 20px;
 }
+.header-cart__info .header-cart__count {
+  width: 100% !important;
+}
 .header-cart__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,6 +768,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .header-cart__count {
   margin-left: 8px;
@@ -776,12 +785,8 @@ body {
   font-weight: 500;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: rgba(255, 255, 255, 0);
-}
-.header-cart__text:hover {
-  text-decoration-color: #f0d800;
+  text-decoration: underline !important;
+  text-decoration-color: #F0D800 !important;
 }
 .header-cart__delete {
   margin-top: 3px;
