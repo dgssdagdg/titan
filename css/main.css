@@ -838,6 +838,7 @@ body {
 }
 .header-cart__attention {
   margin-top: 15px;
+  margin-bottom: 19px;
   background: #F2F6FD;
   position: relative;
   padding: 16px 85px 14px 18px;
