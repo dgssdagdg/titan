@@ -35,6 +35,7 @@ window.addEventListener('click', function(event) {
     } else if (!event.target.closest('.search-open') && searchSub.closest('.search__list-active')) {
         searchSub.classList.remove('search__list-active');
     }
+
 })
 
 const popularSubSlider = new Swiper('.popular-slider-tabs', {
