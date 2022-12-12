@@ -29,10 +29,10 @@ window.addEventListener('click', function(event) {
         catalog.classList.remove('header__catalog--active');
     }
     let searchSub = document.querySelector('.search__list');
-    if (event.target.closest('.search')) {
+    if (event.target.closest('.search-open')) {
 
         searchSub.classList.toggle('search__list-active');
-    } else if (!event.target.closest('.search') && searchSub.closest('.search__list-active')) {
+    } else if (!event.target.closest('.search-open') && searchSub.closest('.search__list-active')) {
         searchSub.classList.remove('search__list-active');
     }
 })

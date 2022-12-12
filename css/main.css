@@ -3988,8 +3988,11 @@ body {
     font-size: 13px;
   }
   .footer .footer__pay-payments {
-    max-width: 220px;
+    max-width: 210px;
     margin: 10px 0 0;
+  }
+  .footer .footer__pay-payments a {
+    max-width: 50px;
   }
   .footer .footer__pay-payments .visa {
     max-width: 179px;
