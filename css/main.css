@@ -1796,8 +1796,8 @@ body {
 }
 @-webkit-keyframes xxx {
   12.5% {
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 50%, 50% 50%);
-            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 50%, 50% 50%);
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 0%, 50% 50%);
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 0%, 50% 50%);
   }
   25% {
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 50%, 0 50%, 50% 50%, 50% 50%);
@@ -1830,8 +1830,8 @@ body {
 }
 @keyframes xxx {
   12.5% {
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 50%, 50% 50%);
-            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 50%, 50% 50%);
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 0%, 50% 50%);
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 0, 0 0, 50% 0%, 50% 50%);
   }
   25% {
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 100%, 0 50%, 0 50%, 50% 50%, 50% 50%);
@@ -2750,7 +2750,13 @@ body {
   visibility: hidden;
 }
 .popular__nav-btn--prev {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 16px;
+}
+.popular__nav-btn--prev:disabled {
+  visibility: visible;
 }
 .popular__nav-btn--next {
   right: 16px;
@@ -2763,7 +2769,7 @@ body {
 }
 .popular .popular-slider-tabs {
   position: relative;
-  max-width: 200px;
+  width: 150px;
   overflow: visible;
   margin: 0;
 }
@@ -3861,6 +3867,11 @@ body {
     max-width: 290px;
   }
 }
+@media (min-width: 1441px) {
+  .popular__tabs .popular__nav {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .popular__tab-name {
     font-size: 13px;
@@ -3911,9 +3922,6 @@ body {
   }
   .popular__slider-wrap {
     margin: 0;
-  }
-  .popular__nav-btn--next {
-    top: 115px;
   }
   .popular__slide-image {
     width: 171px;
